@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Annika Santhanam">
+    <meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
+    <meta name = "description" content = "Annika Santhanam professional website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annika Santhanam</title>
+    <link rel = "stylesheet" href = "../static/style.css">
+    <script defer src = "../static/script.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload = "addYear()">
+    <header>
+        <h1 id = "webName">Annika Santhanam</h1>
+        <nav id = "myTopnav" class = "topnav">
+            <a href ="index.html">Home</a>
+            <a href ="cv.html">CV</a>
+            <a href ="contact.html" class = "active">Contact Me</a>
+            <a href ="fun.html">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+
+                <i class="fa fa-bars"></i>
+ 
+              </a>
+        </nav>
+    </header>
+    <div class = "main">
+        <h2>Contact Me</h2>
+        <form action = "">
+            <label for = "name">Your Name (required):</label>
+            <input type = "name" id = "name" required/>
+            <label for = "email"> Your Email (required):</label>
+            <input type = "email" id = "email" required>
+            <label for = "comment"> Your Comment or Question (required):</label>
+            <textarea id = "comment" cols = "30" rows = "10" required></textarea>
+            
+            <input id = "button" type = "submit" value = "SEND" onclick = "validate()"/>
+        
+        </form>
+        <p id = "ValidateMsg"></p>
+
+        <table>
+            <tr><th>Contact Method</th><th>Contact Information</th></tr>
+            <tr><td><strong>Email</strong></td><td>annikas@andrew.cmu.edu</td></tr>
+            <tr><td><strong>Phone Number</strong></td><td>732-781-5802</td></tr>
+            <tr><td><strong>LinkedIn</strong></td><td>@annika-santhanam</td></tr>
+        </table>
+    </div>
+
+    <footer>
+        <p id = "copyYear"> Annika Santhanam &copy</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Annika Santhanam">
+    <meta name = "keywords" content = "Carnegie Mellon University, Information Systems">
+    <meta name = "description" content = "Annika Santhanam professional website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annika Santhanam</title>
+    <link rel = "stylesheet" href = "../static/style.css">
+    <script defer src = "../static/script.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body onload = "addYear()">
+    <header >
+        <h1 id = "webName">Annika Santhanam</h1>
+        <nav id = "myTopnav" class = "topnav">
+            <a href ="index.html" class = "active">Home</a>
+            <a href ="cv.html">CV</a>
+            <a href ="contact.html">Contact Me</a>
+            <a href ="fun.html">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+
+                <i class="fa fa-bars" onclick = "activeNav()"></i>
+ 
+              </a>
+
+        </nav>
+    </header>
+    <div class = "main">
+        <h2 id = "greeting"></h2>
+        <img class = "classA" src = "../static/Headshot.png" alt = "Annika Santhanam profile image" width = "350px">
+        <div class = "classA">
+          <!--  <p id ="intro">Hi! My name is Annika Santhanam, and I’m an undergraduate student at Carnegie Mellon University studying Information Systems with a minor in Cybersecurity and International Conflict. Outside of school, I’m a member of the CMU Mock Trial team and the Dietrich Student Advisory Board. My hobbies include playing the guitar and drums, building LEGOs, working out, and hanging out with my friends! Some of my future career goals include going into private-sector cybersecurity, and potentially a future career in politics.</p>
+        -->
+            <span id = "shortIntro">Hi! My Name is Annika Santhanam, and I'm an undergraduate student at Carnegie Mellon University.</span>
+            <span id = "readMore">read more...</span>
+            <span id = "longIntro">I'm currently studying Information Systems with a minor in Cybersecurity and International Conflict. Outside of school, I’m a member of the CMU Mock Trial team and the Dietrich Student Advisory Board. My hobbies include playing the guitar and drums, building LEGOs, working out, and hanging out with my friends! Some of my future career goals include going into private-sector cybersecurity, and potentially a future career in politics.</span>
+            <span id = "readLess"> read less</span>
+        </div>
+    </div>
+
+    <footer>
+        <p id = "copyYear"> Annika Santhanam &copy</p>
+    </footer>
+    
+</body>
+</html>

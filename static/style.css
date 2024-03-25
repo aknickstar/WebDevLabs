@@ -1,0 +1,188 @@
+
+:root{
+    --lightBLUE: rgb(175, 216, 242);
+    --blue: rgb(82,137,181);
+    --lightGray: rgb(212,213,226);
+    --navyBLUE: rgb(31,53,65);
+    --lightBLU_A: rgb(175, 216, 242, 40%) 
+
+
+
+}
+
+
+@font-face {
+
+    font-family: MyFont;
+ 
+    src: url(../static/Titillium_Web/TitilliumWeb-Regular.ttf);
+ 
+ }
+*{
+    font-family: MyFont;
+    padding: 5px;
+    margin: 5px;
+}
+
+#webName{
+    background-color: var(--lightBLUE);
+}
+
+header{
+    background-color: var(--blue);
+}
+.classA{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav a{
+    text-decoration: none;
+    margin: -5px;
+    margin-right: 15px; 
+    font-size: x-large;
+    color: white;
+    float: left;
+    display: block;
+
+}
+
+nav a.icon{
+    display: none;
+}
+
+form *{
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+th{
+    padding: 12px;
+    background-color: var(--navyBLUE);
+    color: white;
+    width: fit-content;
+}
+
+#button {
+    background-color: var(--lightBLUE);
+    border: none;
+    border-radius: 6px;
+
+
+}
+
+
+
+table tr:nth-child(even){
+    background-color: var(--lightGray);
+}
+
+table tr:hover{
+    background-color: var(--lightBLUE);
+}
+
+/*
+#FavList{
+    display:none;
+}
+*/
+
+#SeeMoreBTN{
+    background-color: var(--lightBLUE);
+    border: 0px;
+    border-radius: 16px;
+    font-size: large;
+}
+
+#longIntro, #readLess{
+    display: none;
+}
+
+#readLess, #readMore{
+    font-style: italic;
+    background-color: var(--lightBLU_A);
+}
+
+#ValidateMsg{
+    width: max-content;
+    margin: auto;
+}
+
+#map {
+
+    height: 40vh;  /* 40% of the viewport height */
+ 
+ }
+
+ #funIMG {
+
+    width: 40%;
+  
+    border-radius: 20%;
+  
+  }
+
+.mainFun{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#item1, #item2, #item3, #item4{
+    width: 40vw;
+    margin: auto;
+}
+
+nav a:hover{
+    background-color: var(--lightGray);
+}
+
+nav a.active{
+    background-color: var(--lightGray);
+}
+
+nav{
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .topnav a:not(:first-child) {display: none;}
+ 
+    .topnav a.icon {
+ 
+      float: right;
+ 
+      display: block;
+ 
+    }}
+
+    @media screen and (max-width: 650px) {
+
+        .topnav.responsive {position: relative;}
+        
+        .topnav.responsive a.icon {
+        
+           position: absolute;
+        
+           right: 0;
+        
+           top: 0;
+        
+        }
+        
+        .topnav.responsive a {
+        
+           float: none;
+        
+           display: block;
+        
+           text-align: left;
+        
+        }}
